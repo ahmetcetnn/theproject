@@ -26,19 +26,19 @@ function TrendMovies() {
 
 
     <div className='trendmovies'>
-      <h1><AiTwotoneStar/> Top Rated</h1>
+      <h1><AiTwotoneFire/> Upcoming Movies</h1>
       <Splide options={{
           perPage:1,
           arrows:false,
           pagination:false,
           drag:'free',
-          gap:'5rem',
+          gap:'1rem',
           height:"20rem"
           
         }}>
         {movies.map(movie => (
           <SplideSlide key={movie.id}>
-            <div style={{backgroundImage:`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}} className='splidebox'>
+            <div  className='splidebox'>
                   <div className='splideimage'>
                   <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
                   </div>
@@ -46,6 +46,9 @@ function TrendMovies() {
                   <h3>{movie.title}</h3>
                   <h4>{movie.release_date} | IMDB:{movie.vote_average} </h4>
                   <p>{movie.overview}</p>
+                  <button id='tmbuttont'>Trailer</button>
+                  <button id='tmbuttonw'>Watch Movie</button>
+
                   </div>
             
             </div>
@@ -57,6 +60,7 @@ function TrendMovies() {
     </div>
   )
 }
+//style={{backgroundImage:`url(https://image.tmdb.org/t/p/w500/${movie.poster_path})`}}
 
 export default TrendMovies;
 

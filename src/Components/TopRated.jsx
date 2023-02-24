@@ -4,7 +4,9 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { useState,useEffect } from 'react';
 function TopRated() {
 return(
-  <div>toprated</div>
+  <div>
+    <h1><AiTwotoneStar/> Toprated Movies</h1>
+    </div>
   )
 }
 

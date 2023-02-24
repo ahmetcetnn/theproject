@@ -53,13 +53,31 @@ img {
 }
 .splidebox{
     display: flex;
-    width: 80vh;
-    
+    width: 100vh;
+    background-color: red;
     
 }
-.splideimage{
-    width: 35vh;
-}
+
+
+ 
+
 .splidetext{
     margin-left: 10vh;
+    
+}
+#tmbuttont{
+    width: 150px;
+    display: inline-block;
+    margin-left: 20px;
+    background-color: transparent;
+    height: 40px;
+    border-radius: 10px;
+}
+#tmbuttonw{
+    width: 150px;
+    display: inline-block;
+    margin-left: 20px;
+    background-color: #003262;
+    height: 40px;
+    border-radius: 10px;
 }
