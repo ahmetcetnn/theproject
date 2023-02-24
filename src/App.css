@@ -17,7 +17,12 @@ li {
     display: flex;
     flex-direction: row;
 }
-.navbar {
+.navbar{
+    margin-left: 20vh;
+    height: 10vh;
+    
+}
+.navbar li{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
