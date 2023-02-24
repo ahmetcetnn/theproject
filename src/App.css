@@ -1,17 +1,19 @@
 *{
-    background-color: #002147;
+    background-color: #010B13;
     color: white;
 }
 .menu{
     display: flex;
     flex-direction: column;
     width: 20vh;
-    height: max-content;
+    height: 100vh;
 }
 li {
     list-style: none;
     margin-top: 2vh;
+    cursor: pointer;
 }
+
 .navbarüst {
     margin-left: 3vh;
     display: flex;
@@ -26,4 +28,8 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+.trendmovies{
+    width: 80vh;
+    
 }
