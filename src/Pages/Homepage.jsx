@@ -1,13 +1,13 @@
 import React from 'react'
 import Menu from '../Extensions/Menu'
 import Navbar from '../Extensions/Navbar'
-import TrendMovies from '../Extensions/TrendMovies'
+import MainSection from '../Extensions/MainSection'
 function Homepage() {
   return (
    
     <div>
         <Navbar/>
-        <TrendMovies/>
+        <MainSection/>
         <Menu/>       
         </div>
     

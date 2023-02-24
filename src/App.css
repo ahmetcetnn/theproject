@@ -7,6 +7,7 @@
     flex-direction: column;
     width: 20vh;
     height: 100vh;
+    float: left;
 }
 li {
     list-style: none;
@@ -29,10 +30,36 @@ li {
     flex-direction: row;
     justify-content: space-around;
 }
-.trendmovies{
-  display: flex;
-  margin-left: 30vh;
-  width: 100vh;
-  
+.movies{
+  display: inline-block;
+  margin-left: 10vh;
+  width: 130vh;
+  height: 140vh;
+  height: 100vh;
 
+}
+.trendmovies{
+    height: 60vh;
+    
+
+}
+.toprated{
+    height: 60vh;
+    
+}
+img {
+    width: 20vh;
+    
+}
+.splidebox{
+    display: flex;
+    width: 80vh;
+    
+    
+}
+.splideimage{
+    width: 35vh;
+}
+.splidetext{
+    margin-left: 10vh;
 }
