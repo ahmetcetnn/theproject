@@ -2,8 +2,8 @@ import React from 'react'
 
 function TrendMovies() {
   return (
-    <div>
-      Trending Movies
+    <div className='trendmovies'>
+            <h1>Trend Movies</h1>
     </div>
   )
 }

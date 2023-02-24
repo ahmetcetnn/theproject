@@ -30,6 +30,9 @@ li {
     justify-content: space-around;
 }
 .trendmovies{
-    width: 80vh;
-    
+  display: flex;
+  margin-left: 30vh;
+  width: 100vh;
+  
+
 }
