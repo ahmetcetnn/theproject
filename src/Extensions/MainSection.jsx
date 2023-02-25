@@ -2,6 +2,7 @@ import React from 'react'
 import TopRated from '../Components/TopRated';
 import TrendMovies from '../Components/TrendMovies';
 import Contunie from '../Components/Contunie';
+import Latest from '../Components/Latest';
 
 function MainSection() {
   return (
@@ -21,6 +22,7 @@ function MainSection() {
     <div className='contunie'>
       <Contunie/>
     </div>
+   
 
 
     </div>

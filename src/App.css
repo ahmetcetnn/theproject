@@ -1,5 +1,6 @@
 *{
-   
+    background-color: #010B13;
+    color: white;
     font-family: 'Fira Sans', sans-serif;
 }
 body, html {
@@ -160,4 +161,27 @@ body, html {
     float:right;
     padding-right: 50px;
     height: 100vh;
+}
+#npsplideimage{
+    width: 25vh;
+    border-radius: 10px;
+}
+.npsplideimage{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+}
+.random{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px 10px 30px;
+}
+#randomimage{
+    width: 40vh;
 }

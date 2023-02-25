@@ -3,7 +3,7 @@ import Homepage from './Pages/Homepage';
 import {GiSunRadiations} from "react-icons/gi"
 import {useState} from "react"
 function App() {
-const [theme,setTheme] =useState(true)
+const [theme,setTheme] =useState(false)
 
   return (
     <div className={theme ? "light" : "dark" }>

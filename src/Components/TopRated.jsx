@@ -4,7 +4,7 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { useState,useEffect } from 'react';
 function TopRated() {
   const [movies,setMovies] = useState([]);
-  const API_URL = "https://api.themoviedb.org/3/movie/top_rated?api_key=002f45e7d56066b7503bddca0e16ee67&lanuage=tr";
+  const API_URL = "https://api.themoviedb.org/3/movie/popular?api_key=002f45e7d56066b7503bddca0e16ee67&lanuage=tr";
   
   useEffect(() => {
     fetch(API_URL)
