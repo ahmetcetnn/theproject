@@ -45,16 +45,11 @@ return(<div>
      
                 <div className='trsplideimage' >
                 <img id='trsplideimage' src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
+                <button id='trsplidebutton'>View More</button>
+              
+                </div>
                 
              
-              
-              
-            
-
-               
-          
-          </div>
-          
         </SplideSlide>
       ))}
     </Splide>

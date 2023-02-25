@@ -14,7 +14,10 @@ function Navbar() {
             <ul>Series</ul>
             <ul>Tv Show</ul>
         </li>
+       
+       
         </div>
+        
    
         
    

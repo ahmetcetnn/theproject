@@ -22,6 +22,8 @@ function Menu() {
         <li><AiTwotoneSetting/> Setting</li>
         <li><AiOutlineCloud/> Help</li>
         <li><RxExit/> Exit</li>
+        <li><span>Log In</span>  | <span>Register</span></li>
+        
       </ul>
     </div>
   )

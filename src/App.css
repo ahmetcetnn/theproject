@@ -1,6 +1,19 @@
 *{
+   
+    font-family: 'Fira Sans', sans-serif;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+.dark{
     background-color: #010B13;
     color: white;
+    font-family: 'Fira Sans', sans-serif;
+}
+.light{
+    background-color: bisque;
+    color: #010B13;
     font-family: 'Fira Sans', sans-serif;
 }
 /* bu kısımda soldaki menüyü stillendirdim */
@@ -24,8 +37,16 @@
 }
 .navbar{
     margin-left: 20vh;
-    height: 10vh;
+    height: 10vh;    
+    position: relative;
     
+}
+.themee{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 40px;
 }
 .navbar li{
     display: flex;
@@ -36,8 +57,8 @@
 .movies{
   display: inline-block;
   margin-left: 10vh;
-  width: 130vh;
-  height: 160vh;
+  width: 128vh;
+  height: 180vh;
   
 
 }
@@ -47,16 +68,13 @@
 
 }
 .toprated{
-    height: 50vh;
+    height: 60vh;
     
 }
 .contunie{
     height: 50vh;
 }
-img {
-    width: 20vh;
-    
-}
+
 /* Bu kısımda upcoming moviesteki kutucuğu stillendiriyorum */
 .splidebox{
     display: flex;
@@ -84,7 +102,13 @@ img {
     background-color: transparent;
     height: 40px;
     border-radius: 10px;
+    cursor: pointer;
+    color: inherit;
+    
 }
+#tmbuttonw:hover {
+    background-color: transparent; /* mouse üzerine geldiğindeki background rengi */
+  }
 #tmbuttonw{
     width: 150px;
     display: inline-block;
@@ -92,9 +116,48 @@ img {
     background-color: #003262;
     height: 40px;
     border-radius: 10px;
+    cursor: pointer;
+    color: inherit;
+    
 }
+#tmbuttont:hover {
+    background-color: #003262; /* mouse üzerine geldiğindeki background rengi */
+  }
+.trsplideimage{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 
+}
 #trsplideimage{
-    width: 25vh;
+    width: 22vh;
     border-radius: 10px;
+    
+}
+#trsplidebutton{
+    width: 130px;
+    margin: 15px auto auto auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent; /* varsayılan background rengi */
+    color: inherit;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   
+}
+#trsplidebutton:hover {
+    background-color: #003262; /* mouse üzerine geldiğindeki background rengi */
+  }
+
+/* --/En sağdaki column kısım */
+.latestmovies{
+    float:right;
+    padding-right: 50px;
+    height: 100vh;
 }

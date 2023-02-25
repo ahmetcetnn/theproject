@@ -49,6 +49,7 @@ function TrendMovies() {
                   <button id='tmbuttont'>Trailer</button>
                   <button id='tmbuttonw'>Watch Movie</button>
                   <button id='tmbuttont'>Add Watchlist</button>
+                  {/* onclickler gelecek butonlara */}
 
                   </div>
             
