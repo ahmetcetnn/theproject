@@ -3,7 +3,7 @@ import Navbar from '../Extensions/Navbar'
 import Menu from '../Extensions/Menu'
 import axios from 'axios';
 import  { useEffect, useState } from 'react';
-
+import { Link } from 'react-router-dom'
 
 function Discovery() {
     const [randomMovie, setRandomMovie] = useState(null);
@@ -26,6 +26,7 @@ function Discovery() {
       <Navbar/>
       <Menu/>    
       <div className='random'>
+        <h1>Dont you know what u gonna watch? Here is random movie for you!</h1>
       {randomMovie && (
         <>
           <h2>{randomMovie.name}</h2>
