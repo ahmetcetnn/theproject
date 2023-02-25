@@ -6,7 +6,7 @@ import {BiSearchAlt2} from "react-icons/bi"
 import {AiTwotoneSetting} from "react-icons/ai"
 import {AiOutlineCloud} from "react-icons/ai"
 import {RxExit} from "react-icons/rx"
-
+import { Link } from 'react-router-dom'
 
 function Menu() {
   return (
@@ -14,8 +14,8 @@ function Menu() {
         
       <ul>
       <p>Menu</p>
-        <li><AiTwotoneHome/> Home</li>
-        <li><ImSafari/> Discovery</li>
+       <Link to="/"> <li><AiTwotoneHome/> Home</li></Link>
+       <Link to ="/discovery"> <li><ImSafari/> Discovery</li></Link>
         <li><MdPeople/> Watchlist</li>
         <li><BiSearchAlt2/> Search</li>
         <hr></hr>
