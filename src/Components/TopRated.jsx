@@ -36,7 +36,7 @@ return(<div>
         arrows:false,
         pagination:false,
         drag:'free',
-        gap:'5rem',
+        gap:'3rem',
         height:"20rem"
         
       }}>

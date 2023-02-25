@@ -1,9 +1,10 @@
 import React from 'react'
+import {AiOutlinePlayCircle} from "react-icons/ai"
 
 function Contunie() {
   return (
     <div>
-      <h1>Contunie Watching</h1>
+      <h1><AiOutlinePlayCircle/> Contunie Watching</h1>
     </div>
   )
 }

@@ -1,6 +1,7 @@
 *{
     background-color: #010B13;
     color: white;
+    font-family: 'Fira Sans', sans-serif;
 }
 /* bu kısımda soldaki menüyü stillendirdim */
 .menu{
@@ -66,7 +67,8 @@ img {
 }
 .splideimage img{
     height:40vh;
-    width: 30vh;
+    width: 32vh;
+    border-radius: 7px;
 }
 
  
@@ -93,6 +95,6 @@ img {
 }
 
 #trsplideimage{
-    width: 24vh;
+    width: 25vh;
     border-radius: 10px;
 }
