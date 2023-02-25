@@ -2,6 +2,7 @@
     background-color: #010B13;
     color: white;
 }
+/* bu kısımda soldaki menüyü stillendirdim */
 .menu{
     display: flex;
     flex-direction: column;
@@ -9,12 +10,12 @@
     height: 100vh;
     float: left;
 }
-li {
+.menu li {
     list-style: none;
-    margin-top: 2vh;
+    margin-top: 4vh;
     cursor: pointer;
 }
-
+/* üstteki navbarın stillendirmesi */
 .navbarüst {
     margin-left: 3vh;
     display: flex;
@@ -30,34 +31,43 @@ li {
     flex-direction: row;
     justify-content: space-around;
 }
+/* mainsection sayfasındaki kısımların stilleri */
 .movies{
   display: inline-block;
   margin-left: 10vh;
   width: 130vh;
-  height: 140vh;
-  height: 100vh;
+  height: 160vh;
+  
 
 }
 .trendmovies{
-    height: 60vh;
+    height: 55vh;
     
 
 }
 .toprated{
-    height: 60vh;
+    height: 50vh;
     
+}
+.contunie{
+    height: 50vh;
 }
 img {
     width: 20vh;
     
 }
+/* Bu kısımda upcoming moviesteki kutucuğu stillendiriyorum */
 .splidebox{
     display: flex;
-    width: 100vh;
-    background-color: red;
+    width: 110vh;
+    height: 50vh;
+    
     
 }
-
+.splideimage img{
+    height:40vh;
+    width: 30vh;
+}
 
  
 
@@ -79,5 +89,10 @@ img {
     margin-left: 20px;
     background-color: #003262;
     height: 40px;
+    border-radius: 10px;
+}
+
+#trsplideimage{
+    width: 24vh;
     border-radius: 10px;
 }

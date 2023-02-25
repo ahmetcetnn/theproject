@@ -16,7 +16,7 @@ function Menu() {
       <p>Menu</p>
         <li><AiTwotoneHome/> Home</li>
         <li><ImSafari/> Discovery</li>
-        <li><MdPeople/> Community</li>
+        <li><MdPeople/> Watchlist</li>
         <li><BiSearchAlt2/> Search</li>
         <hr></hr>
         <li><AiTwotoneSetting/> Setting</li>

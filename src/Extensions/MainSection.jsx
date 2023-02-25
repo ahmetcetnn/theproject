@@ -1,6 +1,7 @@
 import React from 'react'
 import TopRated from '../Components/TopRated';
-import TrendMovies from '../Components/TrendMovies'
+import TrendMovies from '../Components/TrendMovies';
+import Contunie from '../Components/Contunie';
 
 function MainSection() {
   return (
@@ -17,8 +18,8 @@ function MainSection() {
     </div>
 
 
-    <div>
-      <h1>biseyelr</h1>
+    <div className='contunie'>
+      <Contunie/>
     </div>
 
 

@@ -37,17 +37,18 @@ function TrendMovies() {
           
         }}>
         {movies.map(movie => (
-          <SplideSlide key={movie.id}>
+          <SplideSlide key={movie.id} >
             <div  className='splidebox'>
-                  <div className='splideimage'>
+                  <div className='splideimage' >
                   <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
                   </div>
-                  <div className='splidetext'>
+                  <div className='splidetext' >
                   <h3>{movie.title}</h3>
                   <h4>{movie.release_date} | IMDB:{movie.vote_average} </h4>
                   <p>{movie.overview}</p>
                   <button id='tmbuttont'>Trailer</button>
                   <button id='tmbuttonw'>Watch Movie</button>
+                  <button id='tmbuttont'>Add Watchlist</button>
 
                   </div>
             
