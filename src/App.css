@@ -29,6 +29,7 @@ body, html {
     list-style: none;
     margin-top: 4vh;
     cursor: pointer;
+    text-decoration: none;
 }
 /* üstteki navbarın stillendirmesi */
 .navbarüst {
@@ -184,4 +185,7 @@ body, html {
 }
 #randomimage{
     width: 40vh;
+}
+.navlink{
+    text-decoration: none;
 }

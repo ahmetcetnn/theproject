@@ -14,9 +14,9 @@ function Menu() {
         
       <ul>
       <p>Menu</p>
-       <Link to="/"> <li><AiTwotoneHome/> Home</li></Link>
-       <Link to ="/discovery"> <li><ImSafari/> Discovery</li></Link>
-        <li><MdPeople/> Watchlist</li>
+       <Link to="/" className='navlink'> <li><AiTwotoneHome/> Home</li></Link>
+       <Link to ="/discovery"className='navlink'> <li><ImSafari/> Discovery</li></Link>
+        <Link to ="/watchlist" className='navlink'><li><MdPeople/> Watchlist</li></Link>
         <li><BiSearchAlt2/> Search</li>
         <hr></hr>
         <li><AiTwotoneSetting/> Setting</li>
