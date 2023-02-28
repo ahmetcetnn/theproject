@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { createContext } from 'react'
 import {AiTwotoneFire} from "react-icons/ai"
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
@@ -19,6 +19,16 @@ function TrendMovies() {
         setMovies(data.results);
       })
   }, []);
+
+ const GlobalContext = createContext();
+ 
+
+
+
+
+
+
+
 
   return ( <div>
     
