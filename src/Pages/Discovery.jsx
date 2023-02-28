@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../Extensions/Navbar'
 import Menu from '../Extensions/Menu'
 import  { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom'
+
 
 function Discovery() {
     const [randomMovie, setRandomMovie] = useState(null);

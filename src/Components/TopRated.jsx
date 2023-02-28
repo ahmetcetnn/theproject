@@ -1,5 +1,5 @@
 import React from 'react'
-import {AiTwotoneStar,AiTwotoneFire} from "react-icons/ai"
+import {AiTwotoneStar} from "react-icons/ai"
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { useState,useEffect } from 'react';
 function TopRated() {

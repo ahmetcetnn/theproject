@@ -1,6 +1,5 @@
 import React from 'react'
 import {AiTwotoneFire} from "react-icons/ai"
-import {AiTwotoneStar} from "react-icons/ai"
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import { useState,useEffect } from 'react';
@@ -103,19 +102,3 @@ export default TrendMovies;
 
 
 
-{/* <div className='trendmovies'>
-      <h1><AiTwotoneStar/> Top Rated</h1>
-      <Splide options={{
-          perPage:4,
-          arrows:false,
-          pagination:false,
-          drag:'free',
-          gap:'5rem',
-        }}>
-        {movies.map(movie => (
-          <SplideSlide key={movie.id}>
-            <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
-            <h3>{movie.title}</h3>
-          </SplideSlide>
-        ))}
-      </Splide> */}
