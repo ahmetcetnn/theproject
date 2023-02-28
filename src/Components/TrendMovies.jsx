@@ -8,6 +8,7 @@ import { useState,useEffect } from 'react';
 
 function TrendMovies() {
   
+  
   const [movies,setMovies] = useState([]);
   const API_URL = "https://api.themoviedb.org/3/movie/upcoming?api_key=002f45e7d56066b7503bddca0e16ee67&lanuage=tr";
   
