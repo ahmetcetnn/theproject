@@ -1,11 +1,5 @@
-import React from 'react'
+import { createContext,useContext } from "react";
 
-function GlobalContext() {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const Maincontext =createContext()
 
-export default GlobalContext
+export {Maincontext,useContext}
