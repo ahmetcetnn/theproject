@@ -1,16 +1,17 @@
-import React, { createContext,useContext } from 'react'
+import React, { useContext,useState,useEffect } from 'react'
 import {AiTwotoneFire} from "react-icons/ai"
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
-import { useState,useEffect } from 'react';
 import { GlobalContext } from '../Context/GlobalContext';
 
 
 
-function TrendMovies() {
+function TrendMovies({movie}) {
 
-  const {addMovieToWatchlist}= useContext(GlobalContext);
-
+  const {addMovieToWatchlist,watchlist}= useContext(GlobalContext);
+  
+//  let storedMovie =watchlist.find(o => o.id === movie.id)
+//  const watchlistDisabled = storedMovie ? true : false 
 
 
 
@@ -64,7 +65,9 @@ function TrendMovies() {
                   <p>{movie.overview}</p>
                   <button id='tmbuttont'>Trailer</button>
                   <button id='tmbuttonw'>Watch Movie</button>
-                  <button id='tmbuttont' onClick={() => addMovieToWatchlist(movie)}>
+                  <button id='tmbuttont' 
+                
+                  onClick={() => addMovieToWatchlist(movie)}>
                     Add Watchlist
                   </button>
                 </div>

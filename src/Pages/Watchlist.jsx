@@ -5,11 +5,18 @@ import { useContext } from 'react'
 import { GlobalContext} from '../Context/GlobalContext'
 
 function Watchlist() {
-  // const watchlist = useContext(GlobalContext);
+  const {watchlist,removeMovieFromWatchlist} =useContext(GlobalContext)
+  const handleRemoveMovieFromWatchlist = (id) => {
+    removeMovieFromWatchlist(id);
+  }
 
   return (
-    <div className='watchlist'>
-      {/* <h1>Watchlist</h1>
+    <>
+      <Navbar/>
+      <Menu/>
+      <h1>Watchlist </h1>
+      <div className='watchlist'>
+      
       {watchlist.map((movie) => (
         <div key={movie.id} className='watchlist-movie'>
           <img
@@ -21,11 +28,14 @@ function Watchlist() {
             <h4>
               {movie.release_date} | IMDB:{movie.vote_average}{' '}
             </h4>
-            <p>{movie.overview}</p>
+            {/* <p>{movie.overview}</p> */}
+            <button onClick={() => handleRemoveMovieFromWatchlist(movie.id)}>Remove From Watchlist</button>
           </div>
         </div>
-      ))} */}
-    </div>
+      ))}
+      
+      </div>
+    </>
   );
 }
 

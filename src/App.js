@@ -1,7 +1,5 @@
 import './App.css';
 import Homepage from './Pages/Homepage';
-import {GiSunRadiations} from "react-icons/gi"
-import {useState} from "react"
 import { BrowserRouter,Routes,Route,NavLink} from 'react-router-dom';
 import Discovery from './Pages/Discovery';
 import Watchlist from './Pages/Watchlist';
@@ -14,18 +12,18 @@ function App() {
 
   return (
     <GlobalProvider>
-    <BrowserRouter>
+      <BrowserRouter>
+      
     
-   
-    <Routes>
-    <Route path="/" element={<Homepage />}  />
-    <Route path='discovery' element={<Discovery/>} />
-    <Route path='watchlist' element={<Watchlist/>} />
-  </Routes>
-  
-     
+      <Routes>
+      <Route path="/" element={<Homepage />}  />
+      <Route path='discovery' element={<Discovery/>} />
+      <Route path='watchlist' element={<Watchlist/>} />
+      </Routes>
     
-    </BrowserRouter>
+      
+      
+      </BrowserRouter>
     </GlobalProvider>
   );
 }
