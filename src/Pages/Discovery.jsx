@@ -5,6 +5,7 @@ import  { useEffect, useState } from 'react';
 
 
 function Discovery() {
+    
     const [randomMovie, setRandomMovie] = useState(null);
     useEffect(() => {
         fetch(

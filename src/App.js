@@ -2,15 +2,31 @@ import './App.css';
 import Homepage from './Pages/Homepage';
 import {GiSunRadiations} from "react-icons/gi"
 import {useState} from "react"
+import { BrowserRouter,Routes,Route,NavLink} from 'react-router-dom';
+import Discovery from './Pages/Discovery';
+import Watchlist from './Pages/Watchlist';
+import { GlobalProvider } from './Context/GlobalContext';
+
+
+
 function App() {
-const [theme,setTheme] =useState(false)
+
 
   return (
-    <div className={theme ? "light" : "dark" }>
-      <div className='themee'> <GiSunRadiations  onClick={() => setTheme(!theme)}/></div>
-      <Homepage/>
+    <GlobalProvider>
+    <BrowserRouter>
     
-    </div>
+   
+    <Routes>
+    <Route path="/" element={<Homepage />}  />
+    <Route path='discovery' element={<Discovery/>} />
+    <Route path='watchlist' element={<Watchlist/>} />
+  </Routes>
+  
+     
+    
+    </BrowserRouter>
+    </GlobalProvider>
   );
 }
 

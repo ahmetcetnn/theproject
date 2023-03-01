@@ -3,7 +3,7 @@ import {AiTwotoneFire} from "react-icons/ai"
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import { useState,useEffect } from 'react';
-import { Maincontext } from '../Context/GlobalContext';
+import { GlobalContext, MainContext, Maincontext } from '../Context/GlobalContext';
 
 
 function TrendMovies() {
@@ -27,7 +27,7 @@ function TrendMovies() {
   };
 
   return (
-    <div>
+    <GlobalContext.Provider value={watchlist}>
       <div className='trendmovies'>
         <h1>
           <AiTwotoneFire /> Upcoming Movies
@@ -69,8 +69,9 @@ function TrendMovies() {
         </Splide>
       </div>
      
-    </div>
+    </GlobalContext.Provider>
   );
+
 }
 export default TrendMovies
 

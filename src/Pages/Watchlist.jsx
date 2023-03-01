@@ -1,11 +1,12 @@
 import React from 'react'
 import Navbar from '../Extensions/Navbar'
 import Menu from '../Extensions/Menu'
-// import { Maincontext,useContext } from '../Context/GlobalContext'
+import { useContext } from 'react'
+import { GlobalContext} from '../Context/GlobalContext'
 
 function Watchlist() {
 
-//  const {watchlist}=useContext(Maincontext)
+ 
 
   return (
     <div>
