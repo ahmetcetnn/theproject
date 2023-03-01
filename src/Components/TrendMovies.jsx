@@ -59,7 +59,7 @@ function TrendMovies() {
                 <div className='splidetext'>
                   <h3>{movie.title}</h3>
                   <h4>
-                    {movie.release_date} | IMsDB:{movie.vote_average}{' '}
+                    {movie.release_date} | IMDB:{movie.vote_average}{' '}
                   </h4>
                   <p>{movie.overview}</p>
                   <button id='tmbuttont'>Trailer</button>
