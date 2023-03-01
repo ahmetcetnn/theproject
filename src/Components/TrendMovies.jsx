@@ -62,7 +62,7 @@ function TrendMovies() {
                     {movie.release_date} | IMDB:{movie.vote_average}{' '}
                   </h4>
                   <p>{movie.overview}</p>
-                  <button id='tmbuttont'>Trasiler</button>
+                  <button id='tmbuttont'>Trailer</button>
                   <button id='tmbuttonw'>Watch Movie</button>
                   <button id='tmbuttont' onClick={() => addMovieToWatchlist(movie)}>
                     Add Watchlist
