@@ -1,14 +1,21 @@
-import React, { createContext } from 'react'
+import React, { createContext,useContext } from 'react'
 import {AiTwotoneFire} from "react-icons/ai"
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import { useState,useEffect } from 'react';
-import { GlobalContext, MainContext, Maincontext } from '../Context/GlobalContext';
+import { GlobalContext } from '../Context/GlobalContext';
+
 
 
 function TrendMovies() {
+
+  const {addMovieToWatchlist}= useContext(GlobalContext);
+
+
+
+
   const [movies, setMovies] = useState([]);
-  const [watchlist, setWatchlist] = useState([]);
+  
 
   const API_URL =
     'https://api.themoviedb.org/3/movie/upcoming?api_key=002f45e7d56066b7503bddca0e16ee67&lanuage=tr';
@@ -22,12 +29,10 @@ function TrendMovies() {
       });
   }, []);
 
-  const addMovieToWatchlist = (movie) => {
-    setWatchlist((prevWatchlist) => [...prevWatchlist, movie]);
-  };
+  
 
   return (
-    <GlobalContext.Provider value={watchlist}>
+    <>
       <div className='trendmovies'>
         <h1>
           <AiTwotoneFire /> Upcoming Movies
@@ -69,7 +74,7 @@ function TrendMovies() {
         </Splide>
       </div>
      
-    </GlobalContext.Provider>
+    </>
   );
 
 }
