@@ -34,7 +34,7 @@ return( <div>
   <div className='contunie'>
     <h1><AiOutlinePlayCircle/> Now Playing Series</h1>
     <Splide options={{
-        perPage:1,
+        perPage:2,
         arrows:false,
         pagination:false,
         drag:'free',

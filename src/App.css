@@ -108,21 +108,8 @@ body, html {
     color: inherit;
     
 }
-#tmbuttonw:hover {
-    background-color: transparent; /* mouse üzerine geldiğindeki background rengi */
-  }
-#tmbuttonw{
-    width: 150px;
-    display: inline-block;
-    margin-left: 20px;
-    background-color: #003262;
-    height: 40px;
-    border-radius: 10px;
-    cursor: pointer;
-    color: inherit;
-    
-}
-#tmbuttont:hover {
+
+.tmbuttont:hover {
     background-color: #003262; /* mouse üzerine geldiğindeki background rengi */
   }
 .trsplideimage{
@@ -201,4 +188,10 @@ body, html {
     width: 140vh;
     text-align: center;
     
+}
+.searchbar{
+    margin-left: 70px;
+    margin-top: 5vh;
+    width: 300px;
+    height: 5vh;
 }

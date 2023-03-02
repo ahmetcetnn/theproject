@@ -13,6 +13,7 @@ function Navbar() {
             <ul>Home</ul>
             <ul>Series</ul>
             <ul>Tv Show</ul>
+            {/* <input type="text" placeholder='Search Movie' className='searchbar'/> */}
         </li>
        
        

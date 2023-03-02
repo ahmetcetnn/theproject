@@ -29,7 +29,7 @@ function Watchlist() {
               {movie.release_date} | IMDB:{movie.vote_average}{' '}
             </h4>
             {/* <p>{movie.overview}</p> */}
-            <button className='tmbuttont' onClick={() => handleRemoveMovieFromWatchlist(movie.id)}>Remove From Watchlist</button>
+            <button className='tmbuttont' onClick={() => handleRemoveMovieFromWatchlist(movie.id)}>Remove </button>
           </div>
         </div>
       ))}
