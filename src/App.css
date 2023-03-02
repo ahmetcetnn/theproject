@@ -97,7 +97,7 @@ body, html {
     margin-left: 10vh;
     
 }
-#tmbuttont{
+.tmbuttont{
     width: 150px;
     display: inline-block;
     margin-left: 20px;

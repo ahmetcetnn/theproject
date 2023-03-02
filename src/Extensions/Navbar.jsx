@@ -1,10 +1,10 @@
 import React from 'react'
-
+import yekflix from "../images/yekflix.png"
 function Navbar() {
   return (
     <div className='navbarüst'>
         
-        <div><h1>LOGO</h1></div>
+        <div><img src={yekflix} alt="logo"/></div>
         
         
         
