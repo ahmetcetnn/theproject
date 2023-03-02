@@ -2,7 +2,13 @@ import React from 'react'
 import {AiTwotoneStar} from "react-icons/ai"
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { useState,useEffect } from 'react';
+import { Button, Modal } from 'react-bootstrap'
 function TopRated() {
+
+  //modal
+  
+
+  
   const [movies,setMovies] = useState([]);
   const API_URL = "https://api.themoviedb.org/3/movie/popular?api_key=002f45e7d56066b7503bddca0e16ee67&lanuage=tr";
   
@@ -25,10 +31,6 @@ function TopRated() {
 
 return(<div>
     
-
-    
-
-
   <div className='toprated'>
     <h1><AiTwotoneStar/> Toprated Movies</h1>
     <Splide options={{
@@ -45,15 +47,20 @@ return(<div>
      
                 <div className='trsplideimage' >
                 <img id='trsplideimage' src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
-                <button id='trsplidebutton'>View More</button>
+                <button id='trsplidebutton'   >View More</button>
               
                 </div>
+               
                 
              
         </SplideSlide>
+        
       ))}
+      
     </Splide>
+    
   </div>
+ 
   </div>
 )
 }

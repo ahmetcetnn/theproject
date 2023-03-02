@@ -34,12 +34,12 @@ return( <div>
   <div className='contunie'>
     <h1><AiOutlinePlayCircle/> Now Playing Series</h1>
     <Splide options={{
-        perPage:2,
+        perPage:3,
         arrows:false,
         pagination:false,
         drag:'free',
         gap:'3rem',
-        height:"35rem"
+        height:"20rem"
         
       }}>
       {movies.map(movie => (
