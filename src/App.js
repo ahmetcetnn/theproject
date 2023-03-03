@@ -4,6 +4,7 @@ import { BrowserRouter,Routes,Route,NavLink} from 'react-router-dom';
 import Discovery from './Pages/Discovery';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
+import Help from './Pages/Help';
 import Watchlist from './Pages/Watchlist';
 import { GlobalProvider } from './Context/GlobalContext';
 
@@ -23,6 +24,7 @@ function App() {
       <Route path='watchlist' element={<Watchlist/>} />
       <Route path='login' element={<Login/>}/>
       <Route path='register' element={<Register/>}/>
+      <Route path='help' element={<Help/>}/>
       </Routes>
     
       
