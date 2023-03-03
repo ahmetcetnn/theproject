@@ -17,12 +17,12 @@ function Menu() {
        <Link to="/" className='navlink'> <li><AiTwotoneHome/> Home</li></Link>
        <Link to ="/discovery"className='navlink'> <li><ImSafari/> Discovery</li></Link>
         <Link to ="/watchlist" className='navlink'><li><MdPeople/> Watchlist</li></Link>
-        <li><BiSearchAlt2/> Search</li>
         <hr></hr>
         <li><AiTwotoneSetting/> Setting</li>
         <li><AiOutlineCloud/> Help</li>
         <li><RxExit/> Exit</li>
-        <li><span>Log In</span>  | <span>Register</span></li>
+        <Link to ="/login" className='navlink'><li>Log In </li></Link> <Link to ="/register" className='navlink'><li> <span>Register</span></li></Link>
+        
         
       </ul>
     </div>

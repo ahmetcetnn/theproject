@@ -2,6 +2,7 @@
     background-color: #010B13;
     color: white;
     font-family: 'Fira Sans', sans-serif;
+    /* padding-top: 4px; */
 }
 body, html {
     margin: 0;
@@ -24,6 +25,7 @@ body, html {
     width: 20vh;
     height: 100vh;
     float: left;
+    margin-top: 60px;
 }
 .menu li {
     list-style: none;
@@ -36,12 +38,13 @@ body, html {
     margin-left: 3vh;
     display: flex;
     flex-direction: row;
+    
 }
 .navbar{
     margin-left: 20vh;
     height: 10vh;    
     position: relative;
-    
+    width: 100%;
 }
 .themee{
     position: absolute;
@@ -61,6 +64,7 @@ body, html {
   margin-left: 10vh;
   width: 128vh;
   height: 180vh;
+  margin-top: 60px;
   
 
 }
@@ -101,16 +105,30 @@ body, html {
     width: 150px;
     display: inline-block;
     margin-left: 20px;
-    background-color: transparent;
+    background-color: white;
     height: 40px;
     border-radius: 10px;
     cursor: pointer;
-    color: inherit;
+    color: #010B13;
+    
+}
+#modalbutton{
+    
+        width: 150px;
+        display: inline-block;
+        margin-left: 20px;
+        background-color: white;
+        height: 40px;
+        border-radius: 10px;
+        cursor: pointer;
+        color: #010B13;
+        
     
 }
 
 .tmbuttont:hover {
     background-color: #003262; /* mouse üzerine geldiğindeki background rengi */
+    color: white;
   }
 .trsplideimage{
     display: flex;
@@ -118,6 +136,7 @@ body, html {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    /* height: 35vh; */
 
 }
 #trsplideimage{
@@ -132,8 +151,8 @@ body, html {
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-color: transparent; /* varsayılan background rengi */
-    color: inherit;
+    background-color: white; /* varsayılan background rengi */
+    color: #010B13;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -142,6 +161,7 @@ body, html {
 }
 #trsplidebutton:hover {
     background-color: #003262; /* mouse üzerine geldiğindeki background rengi */
+    color: white;
   }
 
 /* --/En sağdaki column kısım */
@@ -149,6 +169,7 @@ body, html {
     float:right;
     padding-right: 50px;
     height: 100vh;
+    margin-top: 60px;
 }
 #npsplideimage{
     width: 25vh;
@@ -189,3 +210,57 @@ body, html {
     
 }
 
+/* Modal Kodları */
+.modal .modal-dialog {
+	max-width: 500px;
+    
+}
+.modal .modal-header, .modal .modal-body, .modal .modal-footer {
+	padding: 20px 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;   
+    height: 5vh;
+}
+	
+#modalimage{
+    width: 250px;
+    margin-bottom: 20px;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+.searchbar{
+    margin-top: 30px;
+    margin-left: 100px;
+    width: 270px;
+    height: 5vh;
+    border-radius: 4px;
+    border: 1px solid white;
+    color: white;
+}
+input::placeholder{
+    color: white;
+}
+#submitbtn{
+    margin-top: 30px;
+    margin-left: 5px;
+    border: 1px solid white;
+    border-radius: 4px;
+    height: 5vh;
+}
+.logreg{
+    display: flex;
+    flex-direction: row;
+    right: 30px;
+    position: absolute;
+    justify-content: space-evenly;
+}
+#item1{
+    margin-right: 10px;
+}
+#item2{
+    margin-left: 10px;
+}
