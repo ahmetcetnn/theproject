@@ -26,7 +26,7 @@ function Login() {
       <input type="e-mail" placeholder='E-posta Adresinizi Girin.' value={email} onChange={e => setEmail(e.target.value)}></input>
       <input type="password" placeholder='Şifrenizi Girin.'value={password} onChange={e => setPassword(e.target.value)}></input>
       <button disabled={!email || !password} onSubmit> GİRİŞ YAP</button>
-       <p>Google, Apple, veya e-posta ile devam ederek Yekflix'in Hizmet Kullanım Şartlarını 
+       <p>Google, Apple, veya e-possta ile devam ederek Yekflix'in Hizmet Kullanım Şartlarını 
         ve <span>Gizlilik Politikasını </span> kabul etmiş olursun.</p>
         <p>Üyeliğin yok mu? <Link to="/register"> Kayıt Ol</Link></p>
       </div>
