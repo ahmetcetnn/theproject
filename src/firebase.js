@@ -6,15 +6,16 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCtA87mh_BGIUN2kgUrc3QSIKmeApR2w34",
-  authDomain: "thproject-movie.firebaseapp.com",
-  projectId: "thproject-movie",
-  storageBucket: "thproject-movie.appspot.com",
-  messagingSenderId: "547531881629",
-  appId: "1:547531881629:web:3be7e3cc6d5823e551e874",
-  measurementId: "G-H60D3L5LWC"
-};
+    apiKey: "AIzaSyCxS-d3SQADZEfIQNLArq5M5O-92jmobSA",
+    authDomain: "movieproject-c5c2a.firebaseapp.com",
+    projectId: "movieproject-c5c2a",
+    storageBucket: "movieproject-c5c2a.appspot.com",
+    messagingSenderId: "988002082733",
+    appId: "1:988002082733:web:2666119910479979944b24",
+    measurementId: "G-K4LXKF7H0J"
+  };
 
 
-export const auth = getAuth()
+
 const app = initializeApp(firebaseConfig);
+export const auth = getAuth();

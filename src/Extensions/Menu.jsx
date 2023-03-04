@@ -6,9 +6,18 @@ import {BiSearchAlt2} from "react-icons/bi"
 import {AiTwotoneSetting} from "react-icons/ai"
 import {AiOutlineCloud} from "react-icons/ai"
 import {RxExit} from "react-icons/rx"
-import { Link } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
 
 function Menu() {
+  const navigate =useNavigate()
+
+  const handleExit = () => {
+    
+    localStorage.removeItem('user');
+   
+    navigate('/login');}
+
+
   return (
     <div className='menu'>
         
@@ -19,8 +28,8 @@ function Menu() {
         <Link to ="/watchlist" className='navlink'><li><MdPeople/> Watchlist</li></Link>
         <hr></hr>
         <li><AiTwotoneSetting/> Setting</li>
-        <li><AiOutlineCloud/> Help</li>
-        <li><RxExit/> Exit</li>
+       <Link to ="/help" className='navlink'><li><AiOutlineCloud/> Help</li></Link>
+        <li onClick={handleExit}><RxExit/> Exit</li>
         <Link to ="/login" className='navlink'><li>Log In </li></Link> <Link to ="/register" className='navlink'><li> <span>Register</span></li></Link>
         
         

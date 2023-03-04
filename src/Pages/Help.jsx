@@ -8,9 +8,9 @@ function Help() {
         <Menu/>
       <h1>Do you have any question?</h1>
       <h4>Here is my contact info</h4>
-      <a href='tel:+905377013634'>Beni Ara</a>
+      <a href='tel:+905377013634'>Call Me</a>
       <br></br>
-      <a href='mailto:ahmetlaw@outlook.com'>E-Posta Gönder</a>
+      <a href='mailto:ahmetlaw@outlook.com'>Send Me E-Mail</a>
     </div>
   )
 }
