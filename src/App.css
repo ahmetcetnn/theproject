@@ -268,7 +268,7 @@ a{
     text-decoration: none;
     list-style: none;
 }
-.login{
+.loginn{
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -278,7 +278,8 @@ a{
     height: 70vh;
     
 }
-.login button {
+
+.loginn button {
     border: 1px solid  ;
   border-radius: 7px;
   height: 7vh;
@@ -298,11 +299,11 @@ a{
   padding: 5px;
   cursor: pointer;
 }
-.login button:hover{
+.loginn button:hover{
     color: white;
     background-color: #003262 ;
 }
-.login input {
+.loginn input {
    
         border: 1px solid;
         border-radius: 7px;
@@ -312,6 +313,8 @@ a{
         margin-bottom: 8px;
         text-align: center;
       
+        
+      
 }
 .section{
     display: flex;
@@ -320,3 +323,4 @@ a{
     justify-content: center;
     align-items: center;
   }
+  
