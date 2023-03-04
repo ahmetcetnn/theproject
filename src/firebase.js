@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 
 
@@ -15,6 +15,6 @@ const firebaseConfig = {
   measurementId: "G-H60D3L5LWC"
 };
 
-export const auth= getAuth(app)
 
+export const auth = getAuth()
 const app = initializeApp(firebaseConfig);
