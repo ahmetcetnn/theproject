@@ -25,14 +25,27 @@ function Latest() {
 
   return ( 
     <div className='latestmovies'>
-      <h1><FaHourglassStart/> Latest Movies</h1>
-      
+      <h1><FaHourglassStart/> Movie Genre's</h1>
+      <ul>
+        <li>SIENCE FUCTION</li>
+        <hr></hr>
+        <li>ADVENTURE</li>
+        <hr></hr>
+        <li>COMEDY</li>
+        <hr></hr>
+        <li>DRAMA</li>
+        <hr></hr>
+        <li>ROMANTIC</li>
+        <hr></hr>
+        <li>ACTION</li>
+        <hr></hr>
+        <li>HORROR</li>
+        <hr></hr>
+        <li>FANTASY</li>
+        <hr></hr>
+      </ul>
       </div>
 )
 }
 
 export default Latest
-{/* <div className='latestmovies'>
-      <h1><FaHourglassStart/> Latest Movies</h1>
-      
-      </div> */}

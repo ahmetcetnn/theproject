@@ -78,7 +78,7 @@ body, html {
     
 }
 .contunie{
-    height: 70vh;
+    height: 60vh;
 }
 
 /* Bu kısımda upcoming moviesteki kutucuğu stillendiriyorum */
@@ -172,7 +172,7 @@ body, html {
     margin-top: 60px;
 }
 #npsplideimage{
-    width: 25vh;
+    width: 22vh;
     border-radius: 10px;
 }
 .npsplideimage{
@@ -181,6 +181,7 @@ body, html {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    height: 45vh;
     
 }
 .random{
@@ -333,4 +334,9 @@ a{
     text-align: center;
     margin-top: 4%;
   }
-  
+  .latestmovies li{
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 6vh;
+  }
