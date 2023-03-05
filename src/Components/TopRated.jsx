@@ -9,6 +9,7 @@ function TopRated() {
   const [show, setShow] = useState(false);
   const [movies, setMovies] = useState([]);
   const [selectedMovie, setSelectedMovie] = useState(null);
+  
 
   const API_URL =
     "https://api.themoviedb.org/3/movie/popular?api_key=002f45e7d56066b7503bddca0e16ee67&lanuage=tr";

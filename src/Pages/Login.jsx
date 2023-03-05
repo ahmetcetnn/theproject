@@ -40,14 +40,14 @@ function Login() {
           
           <br></br>
             <input type="email" 
-              placeholder='E-posta Adresinizi Girin.' 
+              placeholder='Enter Your E-Mail.' 
               value={email} 
               onChange={e => setEmail(e.target.value)}></input>
             <input type="password" 
-              placeholder='Şifrenizi Girin.'
+              placeholder='Enter Your Password.'
               value={password} 
               onChange={e => setPassword(e.target.value)}></input>
-          <button disabled={!email || !password} type="submit"> GİRİŞ YAP</button>
+          <button disabled={!email || !password} type="submit"> Log In</button>
           
           
           
@@ -55,7 +55,7 @@ function Login() {
           
             {error && <span style={{color:"red"}}>Wrong e-mail or password!</span> } 
           
-            <p >Üyeliğin yok mu? <Link to="/register"> Kayıt Ol</Link></p>
+            <p >Dont you have an account? <Link to="/register"> Sign Up</Link></p>
       </div>
       </div>
       </form>

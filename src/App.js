@@ -10,6 +10,7 @@ import { GlobalProvider } from './Context/GlobalContext';
 import { AuthContextProvider } from './Context/AuthContext';
 import { AuthContext } from './Context/AuthContext';
 import { useContext } from 'react';
+import Rewiev from './Pages/Rewiev';
 
 
 
@@ -36,6 +37,7 @@ function App() {
       <Route path='watchlist' element={<RequireAuth><Watchlist/></RequireAuth>} />     
       <Route path='register' element={<Register/>}/>
       <Route path='help' element={<RequireAuth><Help/></RequireAuth>}/>
+      <Route path="rewiev" element={<RequireAuth><Rewiev/></RequireAuth>}/>
       </Routes>
     
       

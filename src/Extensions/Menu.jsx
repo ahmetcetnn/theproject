@@ -3,7 +3,7 @@ import {AiTwotoneHome} from "react-icons/ai"
 import {ImSafari} from "react-icons/im"
 import {MdPeople} from "react-icons/md"
 import {BiSearchAlt2} from "react-icons/bi"
-import {AiTwotoneSetting} from "react-icons/ai"
+import {MdOutlineSpeakerNotes} from "react-icons/md"
 import {AiOutlineCloud} from "react-icons/ai"
 import {RxExit} from "react-icons/rx"
 import { Link,useNavigate } from 'react-router-dom'
@@ -24,13 +24,18 @@ function Menu() {
       <ul>
       <p>Menu</p>
        <Link to="/" className='navlink'> <li><AiTwotoneHome/> Home</li></Link>
+       <hr></hr>
        <Link to ="/discovery"className='navlink'> <li><ImSafari/> Discovery</li></Link>
+       <hr></hr>
         <Link to ="/watchlist" className='navlink'><li><MdPeople/> Watchlist</li></Link>
         <hr></hr>
-        <li><AiTwotoneSetting/> Setting</li>
+       <Link to="/rewiev" className='navlink'> <li><MdOutlineSpeakerNotes/> Rewievs</li></Link>
+        <hr></hr>
        <Link to ="/help" className='navlink'><li><AiOutlineCloud/> Help</li></Link>
+       <hr></hr>
         <li onClick={handleExit}><RxExit/> Exit</li>
-        <Link to ="/login" className='navlink'><li>Log In </li></Link> <Link to ="/register" className='navlink'><li> <span>Register</span></li></Link>
+        <hr></hr>
+      
         
         
       </ul>

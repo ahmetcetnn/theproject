@@ -32,15 +32,15 @@ function Register() {
         <div className="loginn">
           
           <br></br>
-            <input type="e-mail" 
-              placeholder='E-posta Adresinizi Girin.' 
+            <input type="email" 
+              placeholder='Enter Your E-Mail.' 
               value={email} 
               onChange={e => setEmail(e.target.value)}></input>
             <input type="password" 
-              placeholder='Şifrenizi Girin.'
+              placeholder='Enter Your Password.'
               value={password} 
               onChange={e => setPassword(e.target.value)}></input>
-          <button disabled={!email || !password} type="submit"> Kayıt Ol</button>
+          <button disabled={!email || !password} type="submit"> Sign Up</button>
           
           
           
@@ -48,7 +48,7 @@ function Register() {
           
             {error && <span style={{color:"red"}}>Wrong e-mail or password!</span> } 
           
-            <p>Üyeliğin var m? <Link to="/login"> Giriş Yap</Link></p>
+            <p>You have an account? <Link to="/login"> Log In</Link></p>
       </div>
       </div>
       </form>
