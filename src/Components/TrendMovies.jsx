@@ -66,7 +66,7 @@ function TrendMovies({movie}) {
                   <button className='tmbuttont'>Trailer</button>
                   <button className='tmbuttont'>Watch Movie</button>
                   <button className='tmbuttont' onClick={() => addMovieToWatchlist(movie)}>
-                    Addd Watchlist
+                    Add Watchlist
                   </button>
                 </div>
               </div>
