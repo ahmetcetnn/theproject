@@ -325,18 +325,59 @@ a{
     align-items: center;
   }
 
-  .rewiev{
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 4%;
-  }
+  
   .latestmovies li{
     text-align: center;
     text-decoration: none;
     list-style: none;
     margin-top: 6vh;
   }
+  .rewiev{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4%;
+
+    
+  }
+  .outputs{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .outputss {
+    text-align: center;
+    margin-top: 4%;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+  }
+  .modalbuton{
+    margin-top: 51%;
+  }
+  #film{
+    width: 190px;
+    border: 1px solid;
+    margin-right: 70px;
+  }
+  #filmbuton{
+    height: 27px;
+    width: 90px;
+  }
+  textarea{
+    height: 12vh;
+    width: 400px;
+  }
+
+
+
+
+
+
+  

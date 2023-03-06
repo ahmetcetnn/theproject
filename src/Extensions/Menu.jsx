@@ -29,8 +29,8 @@ function Menu() {
        <hr></hr>
         <Link to ="/watchlist" className='navlink'><li><MdPeople/> Watchlist</li></Link>
         <hr></hr>
-       <Link to="/rewiev" className='navlink'> <li><MdOutlineSpeakerNotes/> Rewievs</li></Link>
-        <hr></hr>
+       {/* <Link to="/comments" className='navlink'> <li><MdOutlineSpeakerNotes/> Comments</li></Link> */}
+        {/* <hr></hr> */}
        <Link to ="/help" className='navlink'><li><AiOutlineCloud/> Help</li></Link>
        <hr></hr>
         <li onClick={handleExit}><RxExit/> Exit</li>
