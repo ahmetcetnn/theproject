@@ -231,7 +231,7 @@ body, html {
 .search{
     display: flex;
     flex-direction: row;
-    margin-left: 20px;
+    margin-right: 600px;
 }
 .searchbar{
     margin-top: 30px;
