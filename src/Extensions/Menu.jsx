@@ -33,7 +33,7 @@ function Menu() {
         {/* <hr></hr> */}
        <Link to ="/help" className='navlink'><li><AiOutlineCloud/> Help</li></Link>
        <hr></hr>
-        <li onClick={handleExit}><RxExit/> Exsit</li>
+        <li onClick={handleExit}><RxExit/> Exit</li>
         <hr></hr>
       
         
