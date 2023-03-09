@@ -23,7 +23,7 @@ function Menu() {
         
       <ul>
       <p>Menu</p>
-       <Link to="/" className='navlsink'> <li><AiTwotoneHome/> Home</li></Link>
+       <Link to="/" className='navlink'> <li><AiTwotoneHome/> Home</li></Link>
        <hr></hr>
        <Link to ="/discovery"className='navlink'> <li><ImSafari/> Discovery</li></Link>
        <hr></hr>
