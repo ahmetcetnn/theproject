@@ -64,7 +64,7 @@ body, html {
   margin-left: 10vh;
   width: 128vh;
   height: 180vh;
-  margin-top: 60px;
+  
   
 
 }
@@ -374,10 +374,14 @@ a{
     height: 12vh;
     width: 400px;
   }
-
-
-
-
-
-
-  
+.template h3{
+    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   margin-top: 20px;
+}
+.template img {
+    width: 300px;
+    
+}
