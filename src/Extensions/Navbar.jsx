@@ -65,7 +65,7 @@ function Navbar() {
         {
             movies 
               .filter((movie) => {
-                if(searchTerm == ""){
+                if(searchTerm === ""){
                   return movie;
                 }else if(movie.title.toLowerCase().includes(searchTerm.toLowerCase())){
                   return movie;

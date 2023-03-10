@@ -10,6 +10,7 @@ function Comments() {
   const [movies, setMovies] = useState([]);
   const [opinion, setOpinion] = useState("");
   const [opinions, setOpinions] = useState([]);
+  
   useEffect(() => {
     const savedMovies = localStorage.getItem('movies');
     if (savedMovies) {

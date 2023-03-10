@@ -10,8 +10,7 @@ function TrendMovies({movie}) {
 
   const {addMovieToWatchlist,watchlist}= useContext(GlobalContext);
   
-//  let storedMovie =watchlist.find(o => o.id === movie.id)
-//  const watchlistDisabled = storedMovie ? true : false 
+
 
 
 

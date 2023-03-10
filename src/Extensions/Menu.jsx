@@ -2,8 +2,6 @@ import React from 'react'
 import {AiTwotoneHome} from "react-icons/ai"
 import {ImSafari} from "react-icons/im"
 import {MdPeople} from "react-icons/md"
-import {BiSearchAlt2} from "react-icons/bi"
-import {MdOutlineSpeakerNotes} from "react-icons/md"
 import {AiOutlineCloud} from "react-icons/ai"
 import {RxExit} from "react-icons/rx"
 import { Link,useNavigate } from 'react-router-dom'

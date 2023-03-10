@@ -1,7 +1,7 @@
 import React from 'react'
 import {FaHourglassStart} from "react-icons/fa"
 import { useState,useEffect } from 'react';
-import { Splide, SplideSlide } from '@splidejs/react-splide';
+
 
 function Latest() {
   const [movies,setMovies] = useState([]);

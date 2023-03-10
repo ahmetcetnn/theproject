@@ -1,7 +1,4 @@
 import React, { useState } from 'react'
-import {BsFacebook} from "react-icons/bs"
-import {FcGoogle} from "react-icons/fc"
-import {DiApple} from "react-icons/di"
 import { Link } from 'react-router-dom'
 import { createUserWithEmailAndPassword   } from "firebase/auth";
 import {auth} from "../firebase"
