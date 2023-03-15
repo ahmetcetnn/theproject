@@ -43,7 +43,7 @@ function TrendMovies({movie}) {
             arrows: false,
             pagination: false,
             drag: 'free',
-            gap: '1rem',
+            gap: '50rem',
             height: '20rem',
           }}
         >

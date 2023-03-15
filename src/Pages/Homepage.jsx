@@ -8,9 +8,11 @@ function Homepage() {
    
     <div>
         <Navbar/>
+        <Menu/> 
+         {/* <Latest/> */}
         <MainSection/>
-        <Latest/>
-        <Menu/>       
+       
+              
         </div>
     
 

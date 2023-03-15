@@ -23,9 +23,10 @@ body, html {
     display: flex;
     flex-direction: column;
     width: 20vh;
-    height: 100vh;
+    height: 100px;
     float: left;
     margin-top: 60px;
+    position: sticky;
 }
 .menu li {
     list-style: none;
@@ -61,8 +62,11 @@ body, html {
 /* mainsection sayfasındaki kısımların stilleri */
 .movies{
   display: inline-block;
+  justify-content: center;
+  align-items: center;
+  
   margin-left: 10vh;
-  width: 128vh;
+  width: 80vw;
   height: 180vh;
   margin-top: 60px;
   
@@ -236,7 +240,7 @@ body, html {
 }
 .searchbar{
     margin-top: 30px;
-    margin-left: 100px;
+    margin-left: 350px;
     width: 270px;
     height: 5vh;
     border-radius: 4px;
@@ -386,3 +390,127 @@ a{
     width: 300px;
     
 }
+
+@media screen and (min-width: 2000px) {
+   .movies .trendmovies img {
+        width: 210px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .menu {
+        display: none;
+    }
+
+    .search {
+        width: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-right: 750vw;
+    }
+    .logo{
+        display: none;
+    }
+   
+    .logreg{
+        display: none;
+    }
+    .movies img
+     {
+        width: 180px;
+    }
+    .splidetext {
+        padding: 80px 180px 0px 0px;
+        font-size: 10px;
+    }
+    .tmbuttont {
+        display: flex;
+        flex-direction: row;
+        width: 100px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: 3vh;
+    }
+    .trendmovies {
+        font-size: 10px;
+    }
+    .trsplideimage{
+        display: flex;
+        flex-direction: column;
+    }
+    .splideimage img{
+        width: 220px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .menu {
+        display: none;
+    }
+
+    .search {
+        width: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-right: 750vw;
+    }
+    .logo{
+        display: none;
+    }
+   
+    .logreg{
+        display: none;
+    }
+    .movies img
+     {
+        width: 180px;
+    }
+    .splidetext {
+        padding: 80px 180px 0px 0px;
+        font-size: 10px;
+    }
+    .tmbuttont {
+        display: flex;
+        
+        width: 80px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: 3vh;
+    }
+    .trendmovies {
+        font-size: 10px;
+    }
+    .trsplideimage{
+        display: flex;
+        flex-direction: column;
+    }
+    .splideimage img{
+        width: 220px;
+    }
+    .splidebox{
+        width: 85vh;
+        
+    }
+    .splidetext{
+        padding-right: 100px;
+        margin-left: 4vh;
+
+    }
+    .trsplideimage img{
+        width: 30px;
+        margin-right: 20px;
+    }
+    
+}
+
+
+#tmbuttonbg{
+    background-color: #003262;
+}
+

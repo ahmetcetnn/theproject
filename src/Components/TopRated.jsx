@@ -37,8 +37,8 @@ function TopRated() {
   return (
     <div>
       <div className="toprated">
-        <h1>
-          <AiTwotoneStar /> Toprated Movies
+        <h1> 
+         <AiTwotoneStar /> Toprated Movies
         </h1>
         <Splide
           options={{
@@ -46,7 +46,7 @@ function TopRated() {
             arrows: false,
             pagination: false,
             drag: "free",
-            gap: "3rem",
+            gap: "4rem",
             height: "20rem",
           }}
         >

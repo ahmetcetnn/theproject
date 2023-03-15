@@ -31,18 +31,8 @@ function Contunie() {
     setShow(true);
   };
 
-
-
-
-
-
-
-
 return( <div>
     
-
-    
-
 
   <div className='contunie'>
     <h1><AiOutlinePlayCircle/> Now Playing Series</h1>
@@ -57,22 +47,19 @@ return( <div>
       }}>
       {movies.map(movie => (
         <SplideSlide key={movie.id} >
-     
-                <div className='npsplideimage' >
+                <div className='npsplideimage'>
                 <img id='npsplideimage' src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
-                <button id="trsplidebutton" onClick={() => handleShow(movie)}>
+                <button id="trsplidebutton" onClick={()=> handleShow(movie)}>
                   View More
                 </button>
               
-                </div>
-                
+                </div>                
              
         </SplideSlide>
       ))}
     </Splide>
   </div>
-  <Modal show={show} onHide={handleClose}>
-        
+  <Modal show={show} onHide={handleClose}>       
         <Modal.Body>
           {selectedMovie && (
             <div>
@@ -85,7 +72,6 @@ return( <div>
             </div>
           )}
         </Modal.Body>
-        
       </Modal>
   </div>
 )

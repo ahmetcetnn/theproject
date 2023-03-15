@@ -35,13 +35,9 @@ function Navbar() {
 
   return (
     <div className='navbarüst'>       
-        <div><img src={yekflix} alt="logo"/></div>      
+        <div className='logo'><img src={yekflix} alt="logo"/></div>      
         <div className='navbar'>
-        <li>
-            <ul>Home</ul>
-            <ul>Series</ul>
-            <ul>Tv Show</ul>  
-        </li>
+       
 {/* Onsubmit prevent defaulta sayfanın yeniden yüklenmesini engelliyor */}
         <form onSubmit={searchMovie}>
         <div className='search'>
