@@ -1,6 +1,6 @@
 import './App.css';
 import Homepage from './Pages/Homepage';
-import { BrowserRouter,Routes,Route,NavLink, Navigate} from 'react-router-dom';
+import { BrowserRouter,Routes,Route, Navigate} from 'react-router-dom';
 import Discovery from './Pages/Discovery';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
