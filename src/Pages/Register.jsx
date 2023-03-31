@@ -9,16 +9,24 @@ function Register() {
   const [email,setEmail]=useState("")
   const [password,setPassword]=useState("")
   const [error,setError] =useState(false)
+  const [success, setSuccess] = useState(false);
 
   const handleLogin = (e) => {
     e.preventDefault()
+    if (email === "" && password === "") {
+      setSuccess(true);
+      setError(false);
+    }
     createUserWithEmailAndPassword  (auth,email,password)
+    
     .then((userCredential) => {
       const user = userCredential.user;
       console.log(user)
     })
+    
     .catch((error) => {
       setError(true)
+      setSuccess(false);
     });
   }
 
@@ -40,10 +48,10 @@ function Register() {
           <button disabled={!email || !password} type="submit"> Sign Up</button>
           
           
+            {null && <span style={{color:"green"}}>Sign Up Succesfullé</span> }
           
           
-          
-            {error && <span style={{color:"red"}}>Wrong e-mail or password!</span> } 
+            {success && <span style={{color:"red"}}>Wrong e-mail or password!</span> } 
           
             <p>You have an account? <Link to="/login"> Log In</Link></p>
       </div>
