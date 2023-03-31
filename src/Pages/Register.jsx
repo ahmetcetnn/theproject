@@ -13,15 +13,13 @@ function Register() {
 
   const handleLogin = (e) => {
     e.preventDefault()
-    if (email === "" && password === "") {
-      setSuccess(true);
-      setError(false);
-    }
+    
     createUserWithEmailAndPassword  (auth,email,password)
     
     .then((userCredential) => {
       const user = userCredential.user;
       console.log(user)
+      setSuccess(true)
     })
     
     .catch((error) => {
@@ -49,7 +47,7 @@ function Register() {
           
           
             
-          {success && <span style={{color:"green"}}>Sign Up Succesfull</span> }
+            {success && <span style={{color:"green"}}>Sign Up Succesfull</span> }
           
             {error && <span style={{color:"red"}}>Wrong e-mail or password!</span> } 
           
