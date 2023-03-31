@@ -50,7 +50,7 @@ function Login() {
               placeholder='Enter Your Password.'
               value={password} 
               onChange={e => setPassword(e.target.value)}></input>
-          <button disabled={!email || !password} type="submit" > Log In</button>
+          <button disabled={!email || !password} type="submit" onClick={handleClick} > Log In</button>
           
           
           
