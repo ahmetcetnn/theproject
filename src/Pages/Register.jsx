@@ -48,10 +48,10 @@ function Register() {
           <button disabled={!email || !password} type="submit"> Sign Up</button>
           
           
-            {null && <span style={{color:"green"}}>Sign Up Succesfullé</span> }
+            
+          {success && <span style={{color:"green"}}>Sign Up Succesfull</span> }
           
-          
-            {success && <span style={{color:"red"}}>Wrong e-mail or password!</span> } 
+            {error && <span style={{color:"red"}}>Wrong e-mail or password!</span> } 
           
             <p>You have an account? <Link to="/login"> Log In</Link></p>
       </div>
