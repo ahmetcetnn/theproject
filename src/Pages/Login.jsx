@@ -14,6 +14,7 @@ function Login() {
   const [email,setEmail]=useState("")
   const [password,setPassword]=useState("")
   const [error,setError] =useState(false)
+  const [showPopup, setShowPopup] = useState(false);
   
   const navigate =useNavigate()
   const {dispatch} = useContext(AuthContext)
@@ -24,7 +25,10 @@ function Login() {
     .then((userCredential) => {
       const user = userCredential.user;
       dispatch({type:"LOGIN", payload:user})
-      navigate("/")
+      setShowPopup(true);
+      setTimeout(() => {
+        navigate("/");
+      }, 3000);
     })
     .catch((error) => {
       setError(true)
@@ -62,6 +66,7 @@ function Login() {
       </div>
       </div>
       </form>
+      {showPopup && <p>Giriş işlemi başarılı, ana sayfaya yönlendiriliyorsunuz...</p>}
       </div>
 
 )}
