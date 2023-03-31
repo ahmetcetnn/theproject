@@ -64,7 +64,7 @@ function Login() {
       </div>
       </div>
       </form>
-      {showPopup && <p>Giriş işlemi başarılı, ana sayfaya yönlendiriliyorsunuz...</p>}
+      {showPopup && <p style={{textAlign:"center"}}>Giriş işlemi başarılı, ana sayfaya yönlendiriliyorsunuz...</p>}
       </div>
 
 )}
